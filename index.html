@@ -5,6 +5,7 @@
  img4: Ladakh
  img5: Meghalaya
  img6: Rajasthan
+ 
  -->
 
 <!DOCTYPE html>
@@ -12,32 +13,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image slider 2</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="card-css/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
     <nav>
         <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a href="#contact">Contacts</a>
-            <a href="#info">Info</a>
-            <a href="#about-us">About Us</a>
+            <a href="index.html" id="home">Home</a>
+            <a href="itinerary.html">Itineraries</a>
+            <a href="#review-header">Review</a>
+            <a href="about-us.html">About Us</a>
         </div>
         <div class="nav-right">
-            <a href="#sign-up">Sign Up</a>
-            <a href="#log-in">Log In</a>
-            <a href="#log-in"><img src="images\user.png" alt=""></a>
+            <a href="login.html">Log In</a>
+            <!-- <a href="login.html">
+              <img src="images\user.png" alt=""></a> -->
+
+            
         </div>
+        <div class="toggle-nav">
+            <img src="icons/nav-menu.png" alt="">
+        </div>
+
+        
     </nav>
+    <div class="dropdown-menu">
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="itinerary.html">Itineraries</a></li>
+        <li><a href="#review-header">Review</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Log In</a></li>
+    </div>
 </header>
 
+<!-- carousel (image slider) -->
     <div class="carousel">
         <div class="list">
+
+
             <div class="item">
-                <img src="images\img1.jpg" alt="">
+                <img src="images/image-slider-home/andaman-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="author">Exquisite</div>
+                    <div class="author">Pristine</div>
                     <div class="place">Andaman</div>
                     <div class="des">
                         Andaman, with its emerald waters, sun-kissed beaches,  offers a mesmerizing escape where the symphony of waves and whispering palms create a paradise for those seeking tranquility, 
@@ -45,23 +65,23 @@
 
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='Andaman.html';">See more</button>
                     </div>
                 </div>
             </div>
 
 
             <div class="item">
-                <img src="images\img2.jpg" alt="">
+                <img src="images/image-slider-home/kashmir-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="author">Picturesque</div>
+                    <div class="author">Serene</div>
                     <div class="place">Kashmir</div>
                     <div class="des">
                         Kashmir, often called "Paradise on Earth," enchants with its breathtaking landscapes, where snow-capped mountains, verdant valleys, and shimmering lakes weave 
                         a tapestry of natural beauty, inviting travelers to experience the serene allure of this magical land.
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='kashmir.html';">See more</button>
                         
                     </div>
                 </div>
@@ -69,7 +89,23 @@
 
 
             <div class="item">
-                <img src="images\img3.jpg" alt="">
+              <img src="images/image-slider-home/spiti-home-slider.webp" alt="">
+              <div class="content">
+                  <div class="author">Grandoise</div>
+                  <div class="place">Spiti Valley</div>
+                  <div class="des">
+                    Spiti is a breathtaking Himalayan valley, where ancient monasteries cling to cliffs, barren landscapes meet the azure skies, and silence speaks volumes in the embrace of majestic peaks.
+
+                  </div>
+                  <div class="buttons">
+                      <button onclick="location.href='spiti.html';">See more</button>
+                  </div>
+              </div>
+          </div>
+
+
+            <div class="item">
+                <img src="images/image-slider-home/kerala-home-slider.jpg" alt="">
                 <div class="content">
                     <div class="author">Enchanting</div>
                     <div class="place">Kerala</div>
@@ -78,7 +114,7 @@
                          tradition, and rejuvenation that enchants every traveler who visits this enchanting state.
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='kerala.html';">See more</button>
                         
                     </div>
                 </div>
@@ -86,16 +122,16 @@
 
 
             <div class="item">
-                <img src="images\img4.jpg" alt="">
+                <img src="images/image-slider-home/ladakh-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="author">Breathtaking</div>
+                    <div class="author">Awe-inspiring</div>
                     <div class="place">Ladakh</div>
                     <div class="des">
                         Ladakh, the "Land of High Passes," mesmerizes with its starkly beautiful landscapes, where towering mountains, pristine lakes, and ancient monasteries create an otherworldly charm, 
                         beckoning adventurers and seekers of solitude to experience its breathtaking serenity and unique cultural heritage.
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='ladakh.html';">See more</button>
                         
                     </div>
                 </div>
@@ -103,15 +139,15 @@
 
 
             <div class="item">
-                <img src="images\img5.jpg" alt="">
+                <img src="images/image-slider-home/meghalaya-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="author">Stunning</div>
+                    <div class="author">Mystical</div>
                     <div class="place">Meghalaya</div>
                     <div class="des">
                         Meghalaya, the "Abode of Clouds," enchants with its misty hills, cascading waterfalls, and living root bridges, offering a serene and mystical retreat where nature's beauty thrives in every corner, captivating the hearts of all who visit.
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='meghalaya.html';">See more</button>
                         
                     </div>
                 </div>
@@ -119,7 +155,7 @@
 
 
             <div class="item">
-                <img src="images\img6.jpg" alt="">
+                <img src="images/image-slider-home/rajasthan-home-slider.jpg" alt="">
                 <div class="content">
                     <div class="author">Majestic</div>
                     <div class="place">Rajasthan</div>
@@ -127,7 +163,7 @@
                         Rajasthan, the "Land of Kings," dazzles with its majestic palaces, golden deserts, and vibrant culture, offering a journey through time where royal heritage and colorful traditions create an unforgettable tapestry of experiences.
                     </div>
                     <div class="buttons">
-                        <button>See more</button>
+                        <button onclick="location.href='rajashthan.html';">See more</button>
                       
                     </div>
                 </div>
@@ -138,9 +174,9 @@
 
         <div class="thumbnail">
             <div class="item">
-                <img src="images\img1.jpg" alt="">
+                <img src="images/image-slider-home/andaman-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="des">Exquisite</div>
+                    <div class="des">Pristine</div>
                     <div class="title">Andaman</div>
                 </div>
             </div>
@@ -148,17 +184,27 @@
 
         
             <div class="item">
-                <img src="images\img2.jpg" alt="">
+                <img src="images/image-slider-home/kashmir-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="des">Picturesque</div>
+                    <div class="des">Serene</div>
                     <div class="title">Kashmir</div>
                 </div>
             </div>
+
+
+
+            <div class="item">
+              <img src="images/image-slider-home/spiti-home-slider.webp" alt="">
+              <div class="content">
+                  <div class="des">Grandoise</div>
+                  <div class="title">Spiti</div>
+              </div>
+          </div>
         
 
         
             <div class="item">
-                <img src="images\img3.jpg" alt="">
+                <img src="images/image-slider-home/kerala-home-slider.jpg" alt="">
                 <div class="content">
                     <div class="des">Enchanting</div>
                     <div class="title">Kerala</div>
@@ -168,9 +214,9 @@
 
         
             <div class="item">
-                <img src="images\img4.jpg" alt="">
+                <img src="images/image-slider-home/ladakh-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="des">Breathtaking</div>
+                    <div class="des">Awe-inspiring</div>
                     <div class="title">Ladakh</div>
                 </div>
             </div>
@@ -178,9 +224,9 @@
 
         
             <div class="item">
-                <img src="images\img5.jpg" alt="">
+                <img src="images/image-slider-home/meghalaya-home-slider.jpg" alt="">
                 <div class="content">
-                    <div class="des">Stunning</div>
+                    <div class="des">Mystical</div>
                     <div class="title">Meghalaya</div>
                 </div>
             </div>
@@ -188,7 +234,7 @@
 
         
             <div class="item">
-                <img src="images\img6.jpg" alt="">
+                <img src="images/image-slider-home/rajasthan-home-slider.jpg" alt="">
                 <div class="content">
                     <div class="des">Majestic</div>
                     <div class="title">Rajasthan</div>
@@ -204,6 +250,295 @@
 
          <div class="time"></div>
     </div>
+
+<!-- cards part -->
+    
+
+<div class="card-main-section">
+  <div id="card-section">
+    
+    <div class="inside-container">
+      <h1 class="text-center section-heading">Popular spots</h1>
+      <h4 class="text-center section-subheading">that you will love</h4>
+      
+    </div>
+    <div class="inside-container">
+      <div class="swiper card-section-slider">
+        <div class="swiper-wrapper">
+
+
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+            <div class="card-section-slide-img">
+              <img src="images/card-slider-home/taj-mahal-card.jpg" alt="Tranding">
+            </div>
+            <div class="card-section-slide-content">
+              <div class="card-section-slide-content-bottom">
+                <h2 class="place-name">
+                  Taj Mahal, Delhi
+                </h2>
+                <p>Monument of love</p>
+              <a href="delhi.html">explore</a>
+              </div>
+            </div>
+          </div>
+        <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+            <div class="card-section-slide-img">
+              <img src="images/card-slider-home/gulmarg-card.jpg" alt="Tranding">
+            </div>
+            <div class="card-section-slide-content">
+              <div class="card-section-slide-content-bottom">
+                <h2 class="place-name">
+                  Gulmarg, Kashmir
+                </h2>
+                <p>Meadow of flowers</p>
+                <a href="kashmir.html">explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+           <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+            <div class="card-section-slide-img">
+              <img src="images/card-slider-home/shimla-mall-road-card.jpg" alt="Tranding">
+            </div>
+            <div class="card-section-slide-content">
+              <div class="card-section-slide-content-bottom">
+                <h2 class="place-name">
+                  Shimla mall road, Shimla
+                </h2>
+                <p>Queen of hills</p>
+                <a href="shimla.html">explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+           
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+              <div class="card-section-slide-img">
+                <img src="images/card-slider-home/havelock-card.jpg" alt="Tranding">
+              </div>
+              <div class="card-section-slide-content">
+                <div class="card-section-slide-content-bottom">
+                  <h2 class="place-name">
+                    Havelock Island, Andaman
+                  </h2>
+                  <p>Swaraj Island</p>
+                <a href="Andaman.html">explore</a>
+                </div>
+              </div>
+            </div>
+          <!-- Slide-end -->
+           <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+            <div class="card-section-slide-img">
+              <img src="images/card-slider-home/araku-card.jpg" alt="Tranding">
+            </div>
+            <div class="card-section-slide-content">
+              <div class="card-section-slide-content-bottom">
+                <h2 class="place-name">
+                  Araku Valley, Andhra Pradesh
+                </h2>
+                <p>In the heart of Andhra</p>
+              <a href="andhra-pradesh.html">explore</a>
+              </div>
+            </div>
+          </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+         <div class="swiper-slide card-section-slide">
+          <div class="card-section-slide-img">
+            <img src="images/card-slider-home/ooty-card.jpg" alt="Tranding">
+          </div>
+          <div class="card-section-slide-content">
+            <div class="card-section-slide-content-bottom">
+              <h2 class="place-name">
+                Ooty, Tamil Nadu
+              </h2>
+              <p>Queen of hill stations</p>
+            <a href="tamil.html">explore</a>
+            </div>
+          </div>
+        </div>
+      <!-- Slide-end -->
+           <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+            <div class="card-section-slide-img">
+              <img src="images/card-slider-home/spiti-card.jpg" alt="Tranding">
+            </div>
+            <div class="card-section-slide-content">
+              <div class="card-section-slide-content-bottom">
+                <h2 class="place-name">
+                  Key Monastery, Spiti
+                </h2>
+                <p>Little Tibet</p>
+                <a href="spiti.html">explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+              <div class="card-section-slide-img">
+                <img src="images/card-slider-home/hawa-mahal-card.jpg" alt="Tranding">
+              </div>
+              <div class="card-section-slide-content">
+                <div class="card-section-slide-content-bottom">
+                  <h2 class="place-name">
+                    Hawa Mahal, Rajasthan
+                  </h2>
+                  <p>Palace of the Winds</p>
+                <a href="Rajashthan.html">explore</a>
+                </div>
+              </div>
+            </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+              <div class="card-section-slide-img">
+                <img src="images/card-slider-home/munnar-card.jpg" alt="Tranding">
+              </div>
+              <div class="card-section-slide-content">
+                <div class="card-section-slide-content-bottom">
+                  <h2 class="place-name">
+                    Munnar, Kerala
+                  </h2>
+                  <p>Kashmir of South India</p>
+                <a href="kerala.html">explore</a>
+                </div>
+              </div>
+            </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide card-section-slide">
+              <div class="card-section-slide-img">
+                <img src="images/card-slider-home/pangong-card.jpg" alt="Tranding">
+              </div>
+              <div class="card-section-slide-content">
+                <div class="card-section-slide-content-bottom">
+                  <h2 class="place-name">
+                    Pangong Lake, Ladakh
+                  </h2>
+                  <p>Pangong Tso</p>
+                <a href="ladakh.html">explore</a>
+                </div>
+              </div>
+            </div>
+          <!-- Slide-end -->
+         
+        </div>
+
+        <div class="card-section-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+
+      </div>
+      <!-- <div class="explore-more-btn">
+        <button>Explore more places</button>
+      </div> -->
+      <div class="explore-more-btn">
+        <button onclick="location.href='itinerary.html';">Explore more places</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <!-- review part -->
+
+  <div class="review-header" id="review-header">
+    <!-- <img src="images/review-back.jpg" alt=""> -->
+    <div class="review-container">
+        <div class="review-container-left">
+            <h1>Read what our customers love about us</h1>
+            <p>
+                Many have found our website useful in choosing the best itinerary for their anticipated trips.
+            </p>
+            <button>read more reviews</button>
+            <button>give us a review</button>
+        </div>
+        <div class="review-container-right">
+
+            <!-- review card 1 -->
+            <div class="review-card">
+                <img src="images/review-home/user-img.png" alt="" class="user-img">
+                <div class="review-card-content">
+                    <span><img src="icons/quote.png" alt=""></span>
+                    <div class="review-card-details">
+                        <p>
+                            Thanks to this helpful website, planning my travel itinerary for my Kashmir trip was a breeze. I managed to visit all the places I wanted within my tight schedule.
+                        </p>
+                        <h4>- Riya Sen</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- review card 2 -->
+            <div class="review-card">
+                <img src="images/review-home/user-img.png" alt="" class="user-img">
+                <div class="review-card-content">
+                    <span><img src="icons/quote.png" alt=""></span>
+                    <div class="review-card-details">
+                        <p>
+                            Exploring the colorful streets of Jaipur was made easy by this amazing travel website. I was able to visit magnificent palaces, shop for beautiful crafts, and savor delicious Rajasthani cuisine.
+                        </p>
+                        <h4>- Ankit Agarwal</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- review card 3 -->
+            <div class="review-card">
+                <img src="images/review-home/user-img.png" alt="" class="user-img">
+                <div class="review-card-content">
+                    <span><img src="icons/quote.png" alt=""></span>
+                    <div class="review-card-details">
+                        <p>
+                            This travel website made my visit to the serene backwaters of Kerala absolutely unforgettable. With its helpful tips, I was able to book a relaxing houseboat cruise, explore lush green landscapes, and savor authentic South Indian flavors.
+                        </p>
+                        <h4>- Rahul Ghosh</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- footer part -->
+
+  <div class="footer-container">
+    <div class="social-icons">
+        <a href="#"><img src="footer-icons/facebook.png" alt=""></a>
+        <a href="#"><img src="footer-icons/github.png" alt=""></a>
+        <a href="#"><img src="footer-icons/instagram.png" alt=""></a>
+        <a href="#"><img src="footer-icons/linkedin.png" alt=""></a>
+    </div>
+
+    <div class="quick-links">
+        <a href="index.html">Home</a>
+        <a href="itinerary.html">Itineraries</a>
+        <a href="#review-header">Review</a>
+        <a href="about-us.html">About us</a>
+    </div>
+    <div class="copyright-part">
+        <p>© Minor project 2024 | all rights reserved</p>
+    </div>
+    <div class="colour-block"></div>
+</div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="card-js/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
